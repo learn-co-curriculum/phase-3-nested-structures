@@ -70,6 +70,7 @@ Array of Array
 .......:name points to a `String`
 .......:price points to an `Integer` price
 ```
+
 > **_Your_ Model May Vary**: It's certainly true that there are many other
 > details that we could record in this model. Nutritional value, brand,
 > manufacturer, etc.
@@ -90,8 +91,8 @@ to train your brain!
 <pre>
 We have a coordinate grid. That's an AoA
 In each coordinate, there's a "spinner" with multiple snacks
-Each snack has two important facts associated with it, a :name String and a :price
-Integer
+Each snack has two important facts associated with it, a :name String 
+and a :price Integer
 </pre>
 
 ### Explain the Entire Vending Machine from the Bottom Up
@@ -118,6 +119,7 @@ A real version of this data structure is the following. We've included the
 structure, as well as a few Ruby commands, to get some sample data out of
 the NDS.
 
+
 ```ruby
 vending_machine = [[[{:name=>"Vanilla Cookies", :price=>3},
    {:name=>"Pistachio Cookies", :price=>3},
@@ -135,7 +137,8 @@ vending_machine = [[[{:name=>"Vanilla Cookies", :price=>3},
    {:name=>"Pineapple Drink", :price=>1}],
   [{:name=>"Mints", :price=>13},
    {:name=>"Curiously Toxic Mints", :price=>1000},
-   {:name=>"US Mints", :price=>99}]]] #=> [[[{:name=>"Vanilla Cookies", :price=>3}, {:name=>"Pistachio Cookies", :price=>3}, {:name=>"Chocolate Cookies", :price=>3}, {:name=>"Chocolate Chip Cookies", :price=>3}], [{:name=>"Tooth-Melters", :price=>12}, {:name=>"Tooth-Destroyers", :price=>12}, {:name=>"Enamel Eaters", :price=>12}, {:name=>"Dentist's Nightmare", :price=>20}], [{:name=>"Gummy Sour Apple", :price=>3}, {:name=>"Gummy Apple", :price=>5}, {:name=>"Gummy Moldy Apple", :price=>1}]], [[{:name=>"Grape Drink", :price=>1}, {:name=>"Orange Drink", :price=>1}, {:name=>"Pineapple Drink", :price=>1}], [{:name=>"Mints", :price=>13}, {:name=>"Curiously Toxic Mints", :price=>1000}, {:name=>"US Mints", :price=>99}]]]
+   {:name=>"US Mints", :price=>99}]]] 
+   #=> [[[{:name=>"Vanilla Cookies", :price=>3}, {:name=>"Pistachio Cookies", :price=>3}, {:name=>"Chocolate Cookies", :price=>3}, {:name=>"Chocolate Chip Cookies", :price=>3}], [{:name=>"Tooth-Melters", :price=>12}, {:name=>"Tooth-Destroyers", :price=>12}, {:name=>"Enamel Eaters", :price=>12}, {:name=>"Dentist's Nightmare", :price=>20}], [{:name=>"Gummy Sour Apple", :price=>3}, {:name=>"Gummy Apple", :price=>5}, {:name=>"Gummy Moldy Apple", :price=>1}]], [[{:name=>"Grape Drink", :price=>1}, {:name=>"Orange Drink", :price=>1}, {:name=>"Pineapple Drink", :price=>1}], [{:name=>"Mints", :price=>13}, {:name=>"Curiously Toxic Mints", :price=>1000}, {:name=>"US Mints", :price=>99}]]]
 
 # Get a "spinner"
 vending_machine[0][0] #=> [{:name=>"Vanilla Cookies", :price=>3}, {:name=>"Pistachio Cookies", :price=>3}, {:name=>"Chocolate Cookies", :price=>3}, {:name=>"Chocolate Chip Cookies", :price=>3}]
